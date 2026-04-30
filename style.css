@@ -44,10 +44,10 @@ nav a:hover {
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
                       url("background.jpeg");
-    background-size: contain; /* auto ikut size, tak penuh */
+    background-size: contain; /* FULL SCREEN */
     background-position: center;
     background-repeat: no-repeat;
-    padding: 120px 20px;
+    padding: 140px 20px; /* control tinggi */
     text-align: center;
 }
 
@@ -55,22 +55,22 @@ nav a:hover {
 .hero .container {
     background: rgba(255,255,255,0.85); /* putih transparent */
     display: inline-block;
-    padding: 25px 35px;
+    padding: 20px 25px; /* kecik sikit */
     border-radius: 15px;
-    max-width: 700px;
+    max-width: 500px; 
     backdrop-filter: blur(6px); /* effect blur */
 }
 
 /* HERO TEXT */
 .hero h2 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
     color: #333; /* tukar gelap */
     margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     color: #333; /* tukar gelap */
     max-width: 700px;

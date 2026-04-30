@@ -40,42 +40,42 @@ nav a:hover {
     color: #dff0c2;
 }
 
-/* HERO SECTION */
+/* HERO SECTION (FIXED FULL WIDTH) */
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
                       url("background.jpeg");
-    background-size: cover; /* FULL SCREEN */
+    background-size: cover; /* ✅ FULL */
     background-position: center;
     background-repeat: no-repeat;
-    padding: 140px 20px; 
+    padding: 140px 20px;
     text-align: center;
-    width: 100%
+
+    width: 100vw; /* ✅ force full screen */
+    margin-left: calc(-50vw + 50%);
 }
 
-/* BOX BELAKANG TULISAN */
+/* BOX WELCOME (KECIL) */
 .hero .container {
-    width: 100%;
-    max-width: none;
-    background: rgba(255,255,255,0.85); 
+    background: rgba(255,255,255,0.85);
     display: inline-block;
-    padding: 20px 25px; 
+    padding: 20px 25px;
     border-radius: 15px;
-    max-width: 500px; 
-    backdrop-filter: blur(6px); 
+    max-width: 500px;
+    backdrop-filter: blur(6px);
 }
 
 /* HERO TEXT */
 .hero h2 {
     font-size: 36px;
     font-weight: bold;
-    color: #333; /* tukar gelap */
+    color: #333;
     margin-bottom: 15px;
 }
 
 .hero p {
     font-size: 18px;
     font-weight: bold;
-    color: #333; /* tukar gelap */
+    color: #333;
     max-width: 700px;
     margin: auto;
 }
@@ -195,19 +195,15 @@ nav {
 }
 
 .hero {
-    padding: 120px 20px;
-}
-
-.hero .container {
-    padding: 25px;
+    padding: 100px 15px;
 }
 
 .hero h2 {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .gallery {
